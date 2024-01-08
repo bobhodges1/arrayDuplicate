@@ -1,12 +1,12 @@
-import { sum } from "./sum.js";
+import { duplicate2 } from "./sum.js";
 
 // jest docs for expect "matchers"
 // https://jestjs.io/docs/expect
 
-test("adds 1 + 2 to equal 3", () => {
-    expect(sum(1, 2)).toBe(3);
+test("test1", () => {
+    expect(duplicate2([30,20,10])).toStrictEqual([30,30,20,20,10,10]);
 });
 
-test("adds 10 + 20 to equal 30", () => {
-    expect(sum(10, 20)).toBe(30);
+test("test2", () => {
+    expect(duplicate2(["apple", "banana"])).toStrictEqual(["apple","apple","banana","banana"]);
 });

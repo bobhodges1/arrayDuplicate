@@ -1,10 +1,11 @@
-/** Adds two given numbers, returning the sum.
- * @param {number} a
- * @param {number} b
- * @returns {number} the sum of a and b
- */
-function sum(a, b) {
-    return a + b;
+function duplicate2(arr) {
+    let finalArray =[];
+    for (let i=0; i<arr.length; i++){
+        finalArray.push(arr[i]);
+        finalArray.push(arr[i])
+    }
+
+    return finalArray;
 }
 
-export { sum };
+export {duplicate2}
